@@ -17,18 +17,21 @@ h2 {
   line-height: 1.5;
 }
 
+/* Title of the page section */
 .title {
   background-color: #be79df;
 }
 
 .container-fluid {
-  padding: 3% 15% 2%;
+  padding: 3% 15% 7%;
 }
 
-.iphone6 {
+.title-image {
   width: 60%;
-  transform: rotate(20deg);
-  margin-left: 100px;
+  transform: rotate(25deg);
+  position: absolute;
+  /* z-index: -1; */
+  right: 28%;
 }
 
 /* navigation Bar */
@@ -53,8 +56,16 @@ h2 {
 }
 
 /* section feature */
+.features {
+  /* padding: 7% 15%; */
+  position: relative;
+  background-color: #fff;
+  /* z-index: 1; */
+}
+
 .feature-box {
   text-align: center;
+  padding: 4.5%;
 }
 
 .icon {
@@ -67,12 +78,11 @@ h2 {
   color: #be79df;
 }
 
-.feature-container {
+/* .feature-container {
   padding: 7% 15%;
-}
-
+} */
 .feature-text {
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .feature-sub-text {
@@ -116,30 +126,52 @@ h2 {
 }
 
 /* Pricing of the APP */
-.pricing{
+#pricing {
   text-align: center;
   padding: 7% 15%;
 }
+
 /* .signup{
   padding-top: 10%;
 } */
-.card-title{
+.card-title {
   color: black;
-  font-weight:normal;
+  font-weight: normal;
 }
-.display-4{
+
+.display-4 {
   color: black;
 }
+
 /* App promotion for download */
-.app-promotion{
+#app-promotion {
   background-color: #be79df;
   text-align: center;
   padding: 5% 15% 3%;
-
 }
 
 /* Rights of the website */
-.social-media-tags{
+#social-media-tags {
+  font-weight: lighter;
+  line-height: 1.5;
   text-align: center;
-  padding:5% 15%;
+  padding: 2% 15%;
+  color: grey;
+  background-color: #fff;
+}
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+/* responsiveness for mobile and tablet */
+@media (max-width: 1028px) {
+  .title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
 }
